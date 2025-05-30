@@ -78,4 +78,4 @@ This script processes stock data, computes indicators, and generates visualizati
 
 Contributors
 
-Trilord52: Lead developer and data analyst for Tasks 1 and 2.
+Trilord52(Tinbite Yonas)
