@@ -1,0 +1,106 @@
+2025-05-30 17:21:31,295 - INFO - Starting quantitative analysis script.
+2025-05-30 17:21:31,296 - INFO - Found 7 stock files to process.
+2025-05-30 17:21:31,297 - INFO - Processing stock: AAPL
+2025-05-30 17:21:31,912 - INFO - Loaded AAPL data with shape (10998, 9)
+2025-05-30 17:21:32,008 - INFO - Converted Date column to datetime for AAPL.
+2025-05-30 17:21:32,330 - INFO - Calculated technical indicators for AAPL.
+2025-05-30 17:21:32,593 - INFO - Annualized Return for AAPL: 0.3179, Volatility: 0.4428
+2025-05-30 17:21:34,489 - INFO - Saved plot for AAPL to notebooks/figures/AAPL_indicators.png
+2025-05-30 17:21:34,805 - INFO - Saved processed data for AAPL to data/processed/AAPL_processed.csv
+2025-05-30 17:21:34,806 - INFO - Processing stock: AMZN
+2025-05-30 17:21:34,897 - INFO - Loaded AMZN data with shape (6846, 9)
+2025-05-30 17:21:34,904 - INFO - Converted Date column to datetime for AMZN.
+2025-05-30 17:21:34,920 - INFO - Calculated technical indicators for AMZN.
+2025-05-30 17:21:34,922 - INFO - Annualized Return for AMZN: 0.5404, Volatility: 0.5624
+2025-05-30 17:21:35,519 - INFO - Saved plot for AMZN to notebooks/figures/AMZN_indicators.png
+2025-05-30 17:21:35,623 - INFO - Saved processed data for AMZN to data/processed/AMZN_processed.csv
+2025-05-30 17:21:35,623 - INFO - Processing stock: GOOG
+2025-05-30 17:21:35,660 - INFO - Loaded GOOG data with shape (5020, 9)
+2025-05-30 17:21:35,665 - INFO - Converted Date column to datetime for GOOG.
+2025-05-30 17:21:35,686 - INFO - Calculated technical indicators for GOOG.
+2025-05-30 17:21:35,688 - INFO - Annualized Return for GOOG: 0.2958, Volatility: 0.3067
+2025-05-30 17:21:36,212 - INFO - Saved plot for GOOG to notebooks/figures/GOOG_indicators.png
+2025-05-30 17:21:36,295 - INFO - Saved processed data for GOOG to data/processed/GOOG_processed.csv
+2025-05-30 17:21:36,296 - INFO - Processing stock: META
+2025-05-30 17:21:36,318 - INFO - Loaded META data with shape (2926, 9)
+2025-05-30 17:21:36,320 - INFO - Converted Date column to datetime for META.
+2025-05-30 17:21:36,336 - INFO - Calculated technical indicators for META.
+2025-05-30 17:21:36,338 - INFO - Annualized Return for META: 0.3736, Volatility: 0.3854
+2025-05-30 17:21:36,839 - INFO - Saved plot for META to notebooks/figures/META_indicators.png
+2025-05-30 17:21:36,891 - INFO - Saved processed data for META to data/processed/META_processed.csv
+2025-05-30 17:21:36,892 - INFO - Processing stock: MSFT
+2025-05-30 17:21:36,941 - INFO - Loaded MSFT data with shape (9672, 9)
+2025-05-30 17:21:36,948 - INFO - Converted Date column to datetime for MSFT.
+2025-05-30 17:21:36,966 - INFO - Calculated technical indicators for MSFT.
+2025-05-30 17:21:36,968 - INFO - Annualized Return for MSFT: 0.3326, Volatility: 0.3350
+2025-05-30 17:21:37,607 - INFO - Saved plot for MSFT to notebooks/figures/MSFT_indicators.png
+2025-05-30 17:21:37,748 - INFO - Saved processed data for MSFT to data/processed/MSFT_processed.csv
+2025-05-30 17:21:37,748 - INFO - Processing stock: NVDA
+2025-05-30 17:21:37,776 - INFO - Loaded NVDA data with shape (6421, 9)
+2025-05-30 17:21:37,781 - INFO - Converted Date column to datetime for NVDA.
+2025-05-30 17:21:37,798 - INFO - Calculated technical indicators for NVDA.
+2025-05-30 17:21:37,801 - INFO - Annualized Return for NVDA: 0.6322, Volatility: 0.6011
+2025-05-30 17:21:38,326 - INFO - Saved plot for NVDA to notebooks/figures/NVDA_indicators.png
+2025-05-30 17:21:38,429 - INFO - Saved processed data for NVDA to data/processed/NVDA_processed.csv
+2025-05-30 17:21:38,430 - INFO - Processing stock: TSLA
+2025-05-30 17:21:38,462 - INFO - Loaded TSLA data with shape (3545, 9)
+2025-05-30 17:21:38,465 - INFO - Converted Date column to datetime for TSLA.
+2025-05-30 17:21:38,480 - INFO - Calculated technical indicators for TSLA.
+2025-05-30 17:21:38,483 - INFO - Annualized Return for TSLA: 0.6691, Volatility: 0.5694
+2025-05-30 17:21:39,043 - INFO - Saved plot for TSLA to notebooks/figures/TSLA_indicators.png
+2025-05-30 17:21:39,105 - INFO - Saved processed data for TSLA to data/processed/TSLA_processed.csv
+2025-05-30 17:21:39,115 - INFO - Printed summary of financial metrics.
+2025-05-30 17:21:39,115 - INFO - Quantitative analysis script completed successfully.
+2025-05-30 17:29:44,884 - INFO - Starting quantitative analysis script.
+2025-05-30 17:29:44,902 - INFO - Found 7 stock files to process.
+2025-05-30 17:29:44,902 - INFO - Processing stock: AAPL
+2025-05-30 17:29:45,525 - INFO - Loaded AAPL data with shape (10998, 9)
+2025-05-30 17:29:45,655 - INFO - Converted Date column to datetime for AAPL.
+2025-05-30 17:29:46,076 - INFO - Calculated technical indicators for AAPL.
+2025-05-30 17:29:46,155 - INFO - Annualized Return for AAPL: 0.3179, Volatility: 0.4428
+2025-05-30 17:29:47,982 - INFO - Saved plot for AAPL to notebooks/figures/AAPL_indicators.png
+2025-05-30 17:29:48,192 - INFO - Saved processed data for AAPL to data/processed/AAPL_processed.csv
+2025-05-30 17:29:48,192 - INFO - Processing stock: AMZN
+2025-05-30 17:29:48,230 - INFO - Loaded AMZN data with shape (6846, 9)
+2025-05-30 17:29:48,234 - INFO - Converted Date column to datetime for AMZN.
+2025-05-30 17:29:48,250 - INFO - Calculated technical indicators for AMZN.
+2025-05-30 17:29:48,252 - INFO - Annualized Return for AMZN: 0.5404, Volatility: 0.5624
+2025-05-30 17:29:48,863 - INFO - Saved plot for AMZN to notebooks/figures/AMZN_indicators.png
+2025-05-30 17:29:48,994 - INFO - Saved processed data for AMZN to data/processed/AMZN_processed.csv
+2025-05-30 17:29:48,994 - INFO - Processing stock: GOOG
+2025-05-30 17:29:49,024 - INFO - Loaded GOOG data with shape (5020, 9)
+2025-05-30 17:29:49,028 - INFO - Converted Date column to datetime for GOOG.
+2025-05-30 17:29:49,043 - INFO - Calculated technical indicators for GOOG.
+2025-05-30 17:29:49,045 - INFO - Annualized Return for GOOG: 0.2958, Volatility: 0.3067
+2025-05-30 17:29:49,733 - INFO - Saved plot for GOOG to notebooks/figures/GOOG_indicators.png
+2025-05-30 17:29:49,815 - INFO - Saved processed data for GOOG to data/processed/GOOG_processed.csv
+2025-05-30 17:29:49,816 - INFO - Processing stock: META
+2025-05-30 17:29:49,843 - INFO - Loaded META data with shape (2926, 9)
+2025-05-30 17:29:49,846 - INFO - Converted Date column to datetime for META.
+2025-05-30 17:29:49,875 - INFO - Calculated technical indicators for META.
+2025-05-30 17:29:49,878 - INFO - Annualized Return for META: 0.3736, Volatility: 0.3854
+2025-05-30 17:29:50,443 - INFO - Saved plot for META to notebooks/figures/META_indicators.png
+2025-05-30 17:29:50,502 - INFO - Saved processed data for META to data/processed/META_processed.csv
+2025-05-30 17:29:50,502 - INFO - Processing stock: MSFT
+2025-05-30 17:29:50,567 - INFO - Loaded MSFT data with shape (9672, 9)
+2025-05-30 17:29:50,575 - INFO - Converted Date column to datetime for MSFT.
+2025-05-30 17:29:50,591 - INFO - Calculated technical indicators for MSFT.
+2025-05-30 17:29:50,593 - INFO - Annualized Return for MSFT: 0.3326, Volatility: 0.3350
+2025-05-30 17:29:51,181 - INFO - Saved plot for MSFT to notebooks/figures/MSFT_indicators.png
+2025-05-30 17:29:51,367 - INFO - Saved processed data for MSFT to data/processed/MSFT_processed.csv
+2025-05-30 17:29:51,367 - INFO - Processing stock: NVDA
+2025-05-30 17:29:51,397 - INFO - Loaded NVDA data with shape (6421, 9)
+2025-05-30 17:29:51,401 - INFO - Converted Date column to datetime for NVDA.
+2025-05-30 17:29:51,424 - INFO - Calculated technical indicators for NVDA.
+2025-05-30 17:29:51,426 - INFO - Annualized Return for NVDA: 0.6322, Volatility: 0.6011
+2025-05-30 17:29:51,982 - INFO - Saved plot for NVDA to notebooks/figures/NVDA_indicators.png
+2025-05-30 17:29:52,114 - INFO - Saved processed data for NVDA to data/processed/NVDA_processed.csv
+2025-05-30 17:29:52,115 - INFO - Processing stock: TSLA
+2025-05-30 17:29:52,152 - INFO - Loaded TSLA data with shape (3545, 9)
+2025-05-30 17:29:52,155 - INFO - Converted Date column to datetime for TSLA.
+2025-05-30 17:29:52,171 - INFO - Calculated technical indicators for TSLA.
+2025-05-30 17:29:52,174 - INFO - Annualized Return for TSLA: 0.6691, Volatility: 0.5694
+2025-05-30 17:29:52,810 - INFO - Saved plot for TSLA to notebooks/figures/TSLA_indicators.png
+2025-05-30 17:29:52,866 - INFO - Saved processed data for TSLA to data/processed/TSLA_processed.csv
+2025-05-30 17:29:52,988 - INFO - Printed summary of financial metrics.
+2025-05-30 17:29:52,988 - INFO - Quantitative analysis script completed successfully.
