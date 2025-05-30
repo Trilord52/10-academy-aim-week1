@@ -1,81 +1,80 @@
-10 Academy - AIM - Week 1 Project
-Introduction
-This repository contains the codebase and resources for the "10 Academy - AIM - Week 1" project, aimed at predicting stock price movements using financial news sentiment. The project leverages data pipelines, exploratory data analysis (EDA), and quantitative analysis to build a foundation for sentiment-based stock prediction. By understanding how news sentiment influences stock prices, this analysis can help traders and financial institutions make informed decisions, identify market trends, and manage risks effectively in real-world trading scenarios.
-Project Structure
+10 Academy AIM Week 1: Financial News and Stock Price Correlation Analysis
+Project Overview
+This project, developed as part of the 10 Academy AIM Week 1 challenge, aims to analyze the correlation between financial news sentiment and stock price movements for Nova Financial Solutions. The analysis focuses on seven major tech stocks: AAPL, AMZN, GOOG, MSFT, NVDA, TSLA, and META. The project is structured into three tasks:
 
-data/raw/: Raw stock and news data (local only, excluded via .gitignore).
-data/processed/: Processed stock data with technical indicators (local only).
-notebooks/: Jupyter notebooks and generated figures (e.g., figures/ with visualizations like daily_publication_frequency.png).
-quantitative_analysis.py: Python script for quantitative analysis using TA-Lib and manual financial metrics.
+Task 1: Environment setup and exploratory data analysis (EDA) of financial news data.
+Task 2: Quantitative analysis using technical indicators (e.g., SMA, RSI, MACD) with libraries like TA-Lib.
+Task 3: Sentiment analysis of news headlines using TextBlob and correlation analysis with stock price movements.
 
-Progress
-Task 1: Exploratory Data Analysis (EDA)
+Repository Structure
 
-Objective: Analyzed a news dataset (1,407,328 rows) to understand publication patterns and content focus.
-Methods: Used pandas to compute headline length statistics, identify top publishers, extract domains, and detect keywords.
-Findings:
-Top publishers included Benzinga and The Street, indicating a focus on financial news relevant to stock markets.
-Daily publication frequency showed peaks during market opening hours (9 AM–12 PM EST), suggesting news aligns with trading activity.
-Visualizations generated: daily_publication_frequency.png and hourly_publication_frequency.png.
+data/raw/: Raw data files (e.g., raw_analyst_ratings.csv, stock data CSVs).
+data/processed/: Processed data (e.g., sentiment scores, stock returns).
+scripts/: Python scripts for data processing and analysis.
+download_stocks.py: Downloads historical stock data.
+sentiment_correlation.py: Performs sentiment and correlation analysis.
 
 
-Challenges: Handled large dataset size by optimizing data loading and filtering processes.
+notebooks/: Jupyter notebooks for EDA and visualizations.
+notebooks/figures/: Generated plots (e.g., GOOG_sentiment_vs_returns.png).
+src/: Source code for modular functions (if applicable).
 
-Task 2: Quantitative Analysis
+Prerequisites
 
-Objective: Performed quantitative analysis on stock data to compute technical indicators and financial metrics.
-Methods:
-Used TA-Lib to calculate SMA_20, RSI_14, and MACD for stocks like AAPL, AMZN, and GOOG.
-Calculated annualized return and volatility manually using pandas and numpy due to pynance lacking a stats module.
-Generated visualizations (Close Price with SMA, RSI, MACD) saved in notebooks/figures/.
+Python 3.7+
+Dependencies: pandas, numpy, matplotlib, textblob, scipy, yfinance, ta-lib (optional for Task 2)
 
+Installation
 
-Findings:
-RSI_14 indicated overbought conditions for TSLA (RSI > 70) on several days, suggesting potential price corrections.
-MACD crossovers for GOOG aligned with short-term price trends, validating its use for trend analysis.
+Clone the repository:git clone https://github.com/Trilord52/10-academy-aim-week1.git
 
 
-Challenges:
-Resolved pynance limitation by implementing custom financial metric calculations.
-Addressed large file size issue (raw_analyst_ratings.csv, 311.40 MB) by excluding .csv files via .gitignore and rewriting Git history.
+Navigate to the project directory:cd 10-academy-aim-week1
 
 
-
-Next Steps
-
-Task 3: Sentiment Analysis:
-Develop a sentiment analysis model to quantify news sentiment and correlate it with stock price movements.
-Rationale: Sentiment scores can capture market mood, improving prediction accuracy by identifying bullish or bearish trends driven by news.
+Create a virtual environment (optional but recommended):python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 
-Key Focus: Integrate sentiment scores with quantitative metrics (e.g., RSI, MACD) to create a hybrid prediction model.
-Significance: Combining sentiment and technical indicators can provide a more robust signal for stock price movements, reducing false positives.
+Install dependencies:pip install pandas numpy matplotlib textblob scipy yfinance
+
+Note: If using TA-Lib for Task 2, follow installation instructions here.
+
+Usage
+
+Download Stock Data:
+
+Run the script to download historical stock data:python scripts/download_stocks.py
+
+This saves data to data/raw/ (e.g., AAPL_historical_data.csv).
+
+Run Sentiment and Correlation Analysis:
+
+Execute the main analysis script:python scripts/sentiment_correlation.py
+
+Outputs:
+Processed files in data/processed/ (e.g., GOOG_daily_sentiment.csv).
+Plots in notebooks/figures/ (e.g., GOOG_sentiment_vs_returns.png).
+Terminal output of Pearson correlations (e.g., Pearson Correlation (GOOG): -0.089, p-value: 0.886).
 
 
-Priority: Clean and preprocess news data for sentiment extraction, ensuring high-quality input for the model.
-Reason: Accurate sentiment analysis depends on clean data, free from noise like duplicate headlines or irrelevant articles.
+Key Findings
 
-
-
-Setup and Usage
-
-Clone the Repository:git clone https://github.com/Trilord52/10-academy-aim-week1.git
-
-
-Install Dependencies:
-Ensure you have Python 3.8+ installed.
-Install required packages:pip install pandas numpy matplotlib talib
-
-
-
-
-Run the Quantitative Analysis:python quantitative_analysis.py
-
-
-This script processes stock data, computes indicators, and generates visualizations.
+Task 1 (EDA): News publication peaks on Mondays/Thursdays, 9 AM–12 PM EST. Frequent terms: “earnings,” “price target.”
+Task 2 (Quantitative Analysis): Technical indicators (e.g., RSI, MACD) computed for all stocks. Example: TSLA showed overbought conditions (RSI > 70).
+Task 3 (Sentiment Correlation):
+GOOG: Weak negative correlation (-0.089, p-value: 0.886), not significant.
+NVDA: Weak positive correlation (0.176, p-value: 0.824), but skipped due to insufficient data points (< 5).
+AAPL, AMZN, TSLA: Skipped due to sparse data.
+MSFT, META: No news data in dataset.
 
 
 
-Contributors
+Limitations
 
-Trilord52(Tinbite Yonas)
+Sparse overlap between news and stock data dates (e.g., AAPL/AMZN with only 2 points).
+Missing news data for MSFT and META (possible ticker mismatch, e.g., ‘MS’, ‘FB’).
+Sentiment analysis with TextBlob may not capture financial nuances.
+
+Contact
+Tinbite Yonas 
